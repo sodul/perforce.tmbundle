@@ -5,7 +5,8 @@ p4 = None
 
 def connect_to_p4():
 	global p4
-	
+	os.environ['PWD'] = os.environ['TM_DIRECTORY']
+	os.chdir(os.environ['TM_DIRECTORY'])
 	if p4 is None:
 		p4 = P4()
 		
@@ -34,6 +35,8 @@ def get_files_relative_to_p4_workspace(file_list):
 	connect_to_p4()
 	
 	if p4 and p4.connected():
+		os.environ['PWD'] = os.environ['TM_DIRECTORY']
+		os.chdir(os.environ['TM_DIRECTORY'])
 		p4_info = p4.run('info')[0]
 		p4_workspace = p4_info['clientRoot'] + '/'
 		

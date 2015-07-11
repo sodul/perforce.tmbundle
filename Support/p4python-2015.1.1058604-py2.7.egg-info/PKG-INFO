@@ -1,6 +1,6 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: p4python
-Version: 2010.2.295040
+Version: 2015.1.1058604
 Summary: P4Python - Python interface to Perforce API
 Home-page: http://www.perforce.com
 Author: Perforce Software Inc
@@ -13,7 +13,7 @@ Description: Perforce is the fast SCM system at www.perforce.com.
         
         
 Keywords: Perforce perforce P4Python
-Platform: MacOS X
+Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable
 Classifier: Intended Audience :: Developers
 Classifier: License :: Freely Distributable
@@ -22,4 +22,6 @@ Classifier: Topic :: Software Development :: Libraries :: Python Modules
 Classifier: Topic :: Software Development :: Version Control
 Classifier: Topic :: Software Development
 Classifier: Topic :: Utilities
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
 Classifier: Operating System :: MacOS :: MacOS X
